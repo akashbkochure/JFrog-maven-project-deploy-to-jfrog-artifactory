@@ -6,13 +6,13 @@ This is an example to deploy our project a custom printer that print string with
 ## How to Run
 ``Clone the Repo first and open as a maven project. Install and setup jfrog artifactory. I used opensource windows installation. Add below server settings in settings.xml in maven. Change username and passwords as given in Artifactory user``
 
-    <servers>
-    	<server>
-    		  <id>central</id>
-    		  <username>admin</username>
-    		  <password>123456789</password>
-    	</server>
-    </servers>
+        <servers>
+            <server>
+    	        <id>central</id>
+    	        <username>admin</username>
+    	        <password>123456789</password>
+    	    </server>
+        </servers>
 
 Then use command ``mvn deploy``
 
