@@ -16,10 +16,19 @@ This is an example to deploy our project a custom printer that print string with
 
 Then use command ``mvn deploy``
 
-Then I can use the repository in future developments by simply adding maven dependency like below
+Then I can use the repository in future developments by simply adding maven dependency and remote repository like below
 
-        <dependency>
-            <groupId>com.hishan.printers</groupId>
-            <artifactId>custom-printer</artifactId>
-            <version>2</version>
-        </dependency>
+        <dependencies>
+            <dependency>
+                <groupId>com.hishan.printers</groupId>
+                <artifactId>custom-printer</artifactId>
+                <version>2</version>
+            </dependency>
+        </dependencies>
+        
+        <repositories>
+            <repository>
+                <id>central</id>
+                <url>http://localhost:8081/artifactory/libs-release</url>
+            </repository>
+        </repositories>
